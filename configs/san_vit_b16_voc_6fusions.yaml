@@ -1,0 +1,6 @@
+# 实验组: 6融合均匀采样配置
+_BASE_: Base-VOC-ablation.yaml
+MODEL:
+  META_ARCHITECTURE: "SAN"
+  SIDE_ADAPTER:
+    FUSION_MAP: ["0->0", "2->1", "4->2", "5->3", "7->4", "9->5"]

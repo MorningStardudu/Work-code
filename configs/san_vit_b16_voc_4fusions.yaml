@@ -1,0 +1,5 @@
+_BASE_: Base-VOC-ablation.yaml
+MODEL:
+  META_ARCHITECTURE: "SAN"
+  SIDE_ADAPTER:
+    FUSION_MAP: ["0->0", "3->1", "6->2", "9->3"]
